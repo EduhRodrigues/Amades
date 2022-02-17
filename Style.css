@@ -1,35 +1,51 @@
-  .red-text {
-    color: rgb(0, 174, 255);
+@import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
+
+ body {
+    border: 0px;
+    margin: 0px;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
   }
 
-  h1 {
-    font-family: Lobster, monospace;
+  .header-image {
+    position: relative;
+    left: 15%;
+    top: 2vw;
+    background: rgba(255, 255, 255, 0.138);
+    width: 70%;
+    z-index: 1;
   }
 
-  #pets-fotos {
-      align-content: center;
+  .body-area {
+    position: absolute;
+    left: 15%;
+    top: 13.5vw;
+    background-color: aqua;
+    width: 70%;
+    height: 93%;
+    
   }
 
-  p {
-    font-size: 16px;
-    font-family: monospace;
-  }
-
-  .thick-green-border {
-    border-color: green;
-    border-width: 10px;
-    border-style: solid;
-    border-radius: 50%;
-  }
-
-  .smaller-image {
-    width: 100px;
-  }
-
-  .silver-background {
-    background-color: silver;
-  }
-
-  #cat-photo-form {
-  background-color: green;
+  a {
+      /* FONT-WEIGHT: 500; */
+      FONT-WEIGHT: 800;
+      position: absolute;
+      /* position: relative; */
+      /* display: inline-flex; */
+      margin: 0;
+      top: .8vw;
+      width: 50%;
+      left: 36%;
+      font-family: 'Love Light', cursive;
+      color: blueviolet;
+      font-size: 46px;
+      letter-spacing: 13px;
+      word-spacing: 5vw;
+      /* color: black; */
+      /* z-index: 2; */
+      /* flex-wrap: nowrap; */
+      /* align-content: center; */
+      /* justify-content: center; */
+      /* align-items: center; */
+      /* flex-direction: row; */
   }
