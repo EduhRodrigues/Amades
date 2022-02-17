@@ -7,7 +7,7 @@
     height: 100vh;
   }
 
-  .header-image {
+  .headers_image {
     position: relative;
     left: 15%;
     top: 2vw;
@@ -16,28 +16,11 @@
     z-index: 1;
   }
 
-  .body-area {
+  .main_default {
     position: absolute;
     left: 15%;
     top: 13.5vw;
     background-color: aqua;
     width: 70%;
     height: 93%;
-    
-  }
-
-  a {
-      
-      FONT-WEIGHT: 800;
-      position: absolute;
-      margin: 0;
-      top: .8vw;
-      width: 50%;
-      left: 36%;
-      font-family: 'Love Light', cursive;
-      color: blueviolet;
-      font-size: 46px;
-      letter-spacing: 13px;
-      word-spacing: 5vw;
-      
-  }
+      }
