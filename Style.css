@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
 
- body {
+
+
+body {
     border: 0px;
     margin: 0px;
-    background-color: rgb(255, 255, 255);
-    height: 100vh;
+    
+    height: 90vh;
   }
 
   .logo {      
@@ -17,7 +19,7 @@
     font-family: 'Love Light', cursive;
     color: blueviolet;
     font-size: 46px;
-    letter-spacing: 6px;
+    letter-spacing: 1vw;
     word-spacing: 1.3vw;
     text-decoration: none;
     z-index: 2;
@@ -26,8 +28,8 @@
   .headers_image {
     position: relative;
     left: 15%;
-    top: 2.5vw;
-    background: rgba(255, 255, 255, 0.138);
+    top: 3.5vw;
+    background: rgba(255, 255, 255, 0);
     width: 70%;
     z-index: 1;
   }
@@ -35,8 +37,119 @@
   .main_default {
     position: absolute;
     left: 15%;
-    top: 14.2vw;
-    background-color: aqua;
+    top: 15.2vw;
+    background-color: rgba(0, 255, 255, 0.391);
     width: 70%;
-    height: 93%;
+    height: 75.5%;
   }
+
+  
+
+  @media (max-width: 1470px) {
+    .logo { 
+      font-size: 70px;
+    }
+
+  @media (max-width: 1360px) {
+    .logo { 
+      font-size: 65px;
+    }
+   
+  @media (max-width: 1280px) {
+    .logo { 
+      font-size: 60px;
+    }
+    
+  @media (max-width: 1130px) {
+    .logo { 
+      font-size: 55px;
+    }
+
+  @media (max-width: 1030px) {
+    .logo { 
+      font-size: 50px;
+    }
+  
+  @media (max-width: 1058px) {
+  .logo { 
+    font-size: 51px;
+    }
+
+  @media (max-width: 986px) {
+  .logo { 
+    font-size: 48px;
+    }
+
+  @media (max-width: 915px) {
+  .logo { 
+    font-size: 44px;
+    }
+    .main_default {
+      height: 66%;
+    }
+
+  @media (max-width: 843px) {
+  .logo { 
+    font-size: 41px;
+    }
+
+  @media (max-width: 771px) {
+  .logo { 
+    font-size: 37px;
+    }
+
+  @media (max-width: 771px) {
+  .logo { 
+    font-size: 37px;
+   }
+
+  @media (max-width: 670px) {
+  .logo { 
+    font-size: 34px;
+   }
+
+  @media (max-width: 628px) {
+  .logo { 
+    font-size: 30px;
+   }
+
+  @media (max-width: 556px) {
+  .logo { 
+    font-size: 27px;
+   }
+
+  @media (max-width: 484px) {
+  .logo { 
+    font-size: 23.5px;
+   }
+
+  @media (max-width: 413px) {
+  .logo { 
+    font-size: 24px; }
+  .main_default {
+    height: 92%;
+  }
+
+  @media (max-width: 341px) {
+  .logo { 
+    font-size: 16.5px;
+   }
+  
+  @media (max-width: 269px) {
+    .logo { 
+    font-size: 13px;
+   }
+
+  @media (max-width: 197px) {
+  .logo { 
+      font-size: 9,5px;
+   }
+
+  @media (max-width: 126px) {
+  .logo { 
+        font-size: 6px;
+  }
+
+
+
+  
