@@ -6,7 +6,7 @@ body {
     border: 0px;
     margin: 0px;
     background-color: rgb(255, 255, 255);
-    height: 90vh;
+    height: 100%;
   }
 
   /* Header */
@@ -18,7 +18,7 @@ body {
     top: .8vw;
     transform: translateX(-50%);
     font-family: 'Love Light', cursive;
-    color: blueviolet;
+    color: rgb(212, 0, 255);
     font-size: 46px;
     letter-spacing: 1vw;
     word-spacing: 1.3vw;
@@ -73,19 +73,21 @@ body {
     font-family: sans-serif;
     box-sizing: border-box;
     background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #039af4);
+    background: linear-gradient(90deg, #f70d0e, HEX #f99321, #fded23, #38b549, #2aa9e2, #303090, #662d90);
   }
 
   .pets_cards {
     display: flex;
     background-color: rgba(255, 255, 255, 0.419);
     width: 90%;
-    height: 90%;
+    margin-top: 3%; 
+    height: 92%;
     align-items: flex-start;
     flex-wrap: wrap;
     align-content: space-around;
     justify-content: space-around;
     flex-direction: row;
-    margin-top: 20px; 
+    
     border-radius: 3vh;
     border: solid;
     border-width: .3px;
@@ -94,7 +96,7 @@ body {
     box-shadow: 0 0 1em rgb(0, 255, 208);
   }
 
-  #pets_button {
+    #pets_button {
     position: absolute;
     left: 7.5%;
     bottom: -17.5%;
@@ -111,9 +113,26 @@ body {
     border-radius: 100%;
     }
 
-    #saude_button {
+    #videos_button {
+    position: absolute;
+    left: 20.5%;
+    bottom: -17.5%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-content: center;
+    background: rgba(0, 0, 0, 0.385);
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 100%;
+    }
+
+    #jogos_button {
       position: absolute;
-      left: 20.5%;
+      left: 33.5%;
       bottom: -17.5%;
       width: 60px;
       height: 60px;
@@ -126,8 +145,9 @@ body {
       align-items: center;
       overflow: hidden;
       border-radius: 100%;
-    }
+      }
 
+     
     /* Footer */
 
     .footer_buttons::before {
@@ -158,26 +178,49 @@ body {
       inset: 5px;
       background: rgb(255, 255, 255);
       border-radius: 50px;
-      box-shadow: inset 0 0 .7em rgb(0, 0, 0);
+      box-shadow:  0 0 .7em rgba(0, 0, 0, 0.467);
       overflow: hidden;
       align-items: center;
     }
 
     #pets_button h2 
     {
-      position: relative; 
-      color: blueviolet;
-      font-size: 19px;
-      z-index: 10;
+      display: flex;
+      z-index: 1;
     }
 
-    #saude_button h2 
-    {
-      position: relative; 
-      color: blueviolet;
-      font-size: 15px;
-      z-index: 10;
+    .pets_button_image {
+      width: 42px;
+      height: 42px;
+     
     }
+
+    #videos_button h2 
+    {
+      display: flex;
+      z-index: 1;
+    }
+
+    .videos_button_image {
+      width: 42px;
+      height: 42px;
+    }
+
+    #jogos_button h2 
+    {
+      display: flex;
+      z-index: 1;
+    }
+
+    .jogos_button_image {
+      display: flex;
+      width: 42px;
+      height: 42px;
+      
+    }
+
+    
+     /* Key Frames */ 
 
     @keyframes animate
      {
@@ -194,9 +237,30 @@ body {
     }
 
 
+    /* @medias */
+
   @media (max-width: 1470px) {
     .logo { 
       font-size: 70px;
+    }
+    .main_default {
+      height: 60%;
+    }
+    .pets_cards {
+      left: 3%;
+      height: 90%;
+    }
+    #pets_button {
+      left: 20%;
+      bottom: -18.5%;
+    }
+    #videos_button {
+      left: 45%;
+      bottom: -18.5%;
+    }
+    #jogos_button {
+      left: 72%;
+      bottom: -18.5%;
     }
 
   @media (max-width: 1360px) {
@@ -276,13 +340,46 @@ body {
   .logo { 
     font-size: 24px; }
   .main_default {
-    height: 92%;
+    height: 79%;
+  }
+  .pets_cards {
+    height: 97.5%;
+  }
+  #pets_button {
+    
+    bottom: -11%;
+  }
+  #videos_button {
+    left: 39%;
+    bottom: -11%;
+  }
+  #jogos_button {
+    left: 72%;
+    bottom: -11%;
   }
 
   @media (max-width: 341px) {
   .logo { 
     font-size: 16.5px;
    }
+   .main_default {
+    height: 50%;
+  }
+  .pets_cards {
+    height: 97.5%;
+  }
+  #pets_button {
+    
+    bottom: -13.5%;
+  }
+  #videos_button {
+    left: 39%;
+    bottom: -13.5%;
+  }
+  #jogos_button {
+    left: 72%;
+    bottom: -13.5%;
+  }
   
   @media (max-width: 269px) {
     .logo { 
@@ -293,6 +390,28 @@ body {
   .logo { 
       font-size: 9,5px;
    }
+
+   @media (max-width: 150px) {
+    .logo { 
+      font-size: 24px; }
+    .main_default {
+      height: 82%;
+    }
+    .pets_cards {
+      height: 97.5%;
+    }
+    #pets_button {
+      
+      bottom: -13.5%;
+    }
+    #videos_button {
+      left: 39%;
+      bottom: -13.5%;
+    }
+    #jogos_button {
+      left: 72%;
+      bottom: -13.5%;
+    }
 
   @media (max-width: 126px) {
   .logo { 
