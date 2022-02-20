@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
 
+/* Body */
+
 body {
     border: 0px;
     margin: 0px;
@@ -7,12 +9,13 @@ body {
     height: 90vh;
   }
 
-  .logo {      
+  /* Header */
+
+  .logo {   
+    position: absolute;   
     font-weight: 800;
-    position: absolute;
-    margin: 0;
-    top: .8vw;
     left: 50%;
+    top: .8vw;
     transform: translateX(-50%);
     font-family: 'Love Light', cursive;
     color: blueviolet;
@@ -20,37 +23,18 @@ body {
     letter-spacing: 1vw;
     word-spacing: 1.3vw;
     text-decoration: none;
-    z-index: 2;
   }
 
   .headers_image {
-    opacity: 1;
     position: relative;
     left: 15%;
     top: 3.5vw;
-    background: rgba(255, 255, 255, 0);
     width: 70%;
+    background: rgba(255, 255, 255, 0);
     z-index: 1;
   }
 
-  main a {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 200px;
-    height: 60px;
-    text-align: center;
-    line-height: 60px;
-    color: #fff;
-    font-size: 24px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-family: sans-serif;
-    box-sizing: border-box;
-    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #039af4);
-
-  }
+  /* Main */
 
   .main_default {
     display: flex;
@@ -71,12 +55,29 @@ body {
     border-bottom: solid;
     border-width: 80px;
     border-color: rgba(177, 177, 177, 0.405);
-     
-}
+  }
+
+  main a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #039af4);
+  }
+
   .pets_cards {
     display: flex;
     background-color: rgba(255, 255, 255, 0.419);
-    
     width: 90%;
     height: 90%;
     align-items: flex-start;
@@ -93,7 +94,7 @@ body {
     box-shadow: 0 0 1em rgb(0, 255, 208);
   }
 
-  #pets_botton {
+  #pets_button {
     position: absolute;
     left: 7.5%;
     bottom: -17.5%;
@@ -110,7 +111,7 @@ body {
     border-radius: 100%;
     }
 
-    #saude_botton {
+    #saude_button {
       position: absolute;
       left: 20.5%;
       bottom: -17.5%;
@@ -125,9 +126,11 @@ body {
       align-items: center;
       overflow: hidden;
       border-radius: 100%;
-      }
+    }
 
-    .footer_bottons::before {
+    /* Footer */
+
+    .footer_buttons::before {
       content: "";
       position: absolute;
       gap: 20px;
@@ -137,7 +140,7 @@ body {
       box-shadow: inset 0 0 1em rgb(0, 255, 208);
     }
 
-    .footer_bottons:hover:before
+    .footer_buttons:hover:before
      {
       content: " ";
       position: absolute;
@@ -147,7 +150,8 @@ body {
       animation: animate 1.3s linear infinite;
     }
 
-    .footer_bottons::after {
+    .footer_buttons::after
+    {
       content: "";
       position: absolute;
       top: 0;
@@ -159,14 +163,16 @@ body {
       align-items: center;
     }
 
-    #pets_botton h2 {
+    #pets_button h2 
+    {
       position: relative; 
       color: blueviolet;
       font-size: 19px;
       z-index: 10;
     }
 
-    #saude_botton h2 {
+    #saude_button h2 
+    {
       position: relative; 
       color: blueviolet;
       font-size: 15px;
@@ -290,5 +296,4 @@ body {
 
   @media (max-width: 126px) {
   .logo { 
-        font-size: 6px;
-  }
+        font-size: 6px;}
