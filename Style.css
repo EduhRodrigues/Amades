@@ -6,7 +6,7 @@ body {
     border: 0px;
     margin: 0px;
     background-color: rgb(255, 255, 255);
-    height: 100%;
+    height: 100vh;
   }
 
   /* Header */
@@ -34,11 +34,11 @@ body {
     z-index: 1;
   }
 
+
   /* Main */
 
-  .main_default {
+  main {
     display: flex;
-    opacity: 1;
     position: absolute;
     left: 15%;
     top: 15.2vw;
@@ -50,11 +50,9 @@ body {
     align-content: flex-start;
     justify-content: center;
     align-items: baseline;
-    border-bottom-left-radius: 5.5vh;
-    border-bottom-right-radius: 3.5vh;
-    border-bottom: solid;
-    border-width: 80px;
-    border-color: rgba(177, 177, 177, 0.405);
+    box-shadow: inset 0px 0px 12px #3A395C;
+   
+   
   }
 
   main a {
@@ -72,22 +70,19 @@ body {
     text-decoration: none;
     font-family: sans-serif;
     box-sizing: border-box;
-    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #039af4);
-    background: linear-gradient(90deg, #f70d0e, HEX #f99321, #fded23, #38b549, #2aa9e2, #303090, #662d90);
   }
 
-  .pets_cards {
+  .main_section {
     display: flex;
     background-color: rgba(255, 255, 255, 0.419);
-    width: 90%;
+    width: 95%;
     margin-top: 3%; 
-    height: 92%;
+    height: 93%;
     align-items: flex-start;
     flex-wrap: wrap;
     align-content: space-around;
     justify-content: space-around;
     flex-direction: row;
-    
     border-radius: 3vh;
     border: solid;
     border-width: .3px;
@@ -113,26 +108,24 @@ body {
     border-radius: 100%;
     }
 
-    #videos_button {
-    position: absolute;
-    left: 20.5%;
-    bottom: -17.5%;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-content: center;
-    background: rgba(0, 0, 0, 0.385);
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    border-radius: 100%;
+    /* Footer */
+
+    footer {
+      display: flex;
+      width: 70%;
+      height: 13%;
+      margin-left: 15%;
+      background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #039af4);
+      margin-top: 55.7vh;
+      z-index: 120;
+      box-shadow: inset 0px 0px 12px #3A395C;
+      border-bottom-left-radius: 6vh;
+      border-bottom-right-radius: 6vh;
     }
 
-    #jogos_button {
+    #videos_button {
       position: absolute;
-      left: 33.5%;
+      left: 20.5%;
       bottom: -17.5%;
       width: 60px;
       height: 60px;
@@ -146,9 +139,23 @@ body {
       overflow: hidden;
       border-radius: 100%;
       }
-
-     
-    /* Footer */
+  
+      #jogos_button {
+        position: absolute;
+        left: 33.5%;
+        bottom: -17.5%;
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-content: center;
+        background: rgba(0, 0, 0, 0.385);
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        border-radius: 100%;
+        }
 
     .footer_buttons::before {
       content: "";
@@ -243,7 +250,7 @@ body {
     .logo { 
       font-size: 70px;
     }
-    .main_default {
+    main {
       height: 60%;
     }
     .pets_cards {
@@ -297,7 +304,7 @@ body {
   .logo { 
     font-size: 44px;
     }
-    .main_default {
+    main {
       height: 66%;
     }
 
@@ -336,28 +343,40 @@ body {
     font-size: 23.5px;
    }
 
-  @media (max-width: 413px) {
-  .logo { 
-    font-size: 24px; }
-  .main_default {
-    height: 79%;
+ @media (max-width: 413px) and (orientation: landscape) {
+    .logo { 
+      font-size: 54px; }
+     
+    }
+    main {
+      height: 79%;
+      width: 95%;
+      left: 2.5%;
+    }
+    .pets_cards {
+      height: 100%;
+    }
+    #pets_button {
+      left: 12%;
+      bottom: -13.5%;
+    }
+    #videos_button {
+      left: 42%;
+      bottom: -13.5%;
+    }
+    #jogos_button {
+      left: 72%;
+      bottom: -13.5%;
+    }
+    footer {
+      position: absolute;
+      bottom: 1.5%;
+      width: 95%;
+      margin-left: 2.5%;
+     z-index: -1;
+    }
   }
-  .pets_cards {
-    height: 97.5%;
-  }
-  #pets_button {
     
-    bottom: -11%;
-  }
-  #videos_button {
-    left: 39%;
-    bottom: -11%;
-  }
-  #jogos_button {
-    left: 72%;
-    bottom: -11%;
-  }
-
   @media (max-width: 341px) {
   .logo { 
     font-size: 16.5px;
@@ -394,7 +413,7 @@ body {
    @media (max-width: 150px) {
     .logo { 
       font-size: 24px; }
-    .main_default {
+    main {
       height: 82%;
     }
     .pets_cards {
