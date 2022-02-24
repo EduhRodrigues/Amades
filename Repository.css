@@ -1,0 +1,341 @@
+.footer_buttons::before {
+    content: "";
+    position: absolute;
+    gap: 20px;
+    width: 110%;
+    height: 110%;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #039af4);
+    box-shadow: inset 0 0 1em rgb(0, 255, 208);
+  }
+
+  .footer_buttons:hover:before
+   {
+    content: "";
+    position: absolute;
+    width: 110%;
+    height: 110%;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #039af4);
+    animation-timing-function:cubic-bezier(0.9, -0.9, 0.1, 2);
+    animation-name: animate;
+    animation-duration: 1s; 
+  }
+
+  .footer_buttons::after
+  {
+    content: "";
+    position: absolute;
+    top: 0;
+    inset: 5.5px;
+    background: rgb(255, 255, 255);
+    border-radius: 50px;
+    box-shadow:  0 0 .7em rgba(0, 0, 0, 0.467);
+    overflow: hidden;
+    align-items: center;
+  }
+
+   /* @medias */
+
+   @media (max-width: 1470px) {
+    .logo { 
+      font-size: 70px;
+    }
+    main {
+      height: 60%;
+    }
+    .main_section {
+      left: 3%;
+      height: 93%;
+    }
+    #pets_button {
+      left: 30%;
+      bottom: 5.2%;
+    }
+    #videos_button {
+      left: 46%;
+      bottom: 5.2%;
+    }
+    #jogos_button {
+      left: 62%;
+      bottom: 5.2%;
+    }
+
+  @media (max-width: 1360px) {
+    .logo { 
+      font-size: 65px;
+    }
+   
+  @media (max-width: 1280px) {
+    .logo { 
+      font-size: 60px;
+    }
+    
+  @media (max-width: 1139px) {
+    .logo { 
+      font-size: 55px;
+    }
+    main {
+      height: 66.5%;
+      top: 12.5vw;
+    }
+    .main_section {
+      margin-top: 2.2%;
+      left: 3%;
+      height: 91.5%;
+    }
+    #pets_button {
+      left: 29%;
+      bottom: 2.7%;
+    }
+    #videos_button {
+      left: 47%;
+      bottom: 2.7%;
+    }
+    #jogos_button {
+      left: 65%;
+      bottom: 2.7%;
+    }
+    footer {
+      display: flex;
+      width: 70%;
+      height: 16%; 
+  }
+
+  @media (max-width: 1030px) {
+    .logo { 
+      font-size: 50px;
+    }
+  
+  @media (max-width: 1058px) {
+  .logo { 
+    font-size: 51px;
+    }
+
+  @media (max-width: 986px) {
+  .logo { 
+    font-size: 48px;
+    }
+
+  @media (max-width: 915px) {
+  .logo { 
+    font-size: 44px;
+    }
+    .headers_image {
+      top: 1.4vw;
+      width: 66%;
+
+  }
+    main {
+      height: 53%;
+    }
+    .main_section {
+      left: 3%;
+      height: 86%;
+    }
+    #pets_button {
+      left: 28%;
+      bottom: 2.6%;
+    }
+    #videos_button {
+      left: 46%;
+      bottom: 2.6%;
+    }
+    #jogos_button {
+      left: 64%;
+      bottom: 2.6%;
+    }
+    footer {
+      display: flex;
+      width: 70%;
+      height: 19%;
+      margin-left: 15%;
+      margin-top: 19.5%;
+    }
+
+  @media (max-width: 843px) {
+  .logo { 
+    font-size: 41px;
+    }
+
+  @media (max-width: 774px) {
+  .logo { 
+    font-size: 37px;
+    }
+    main {
+      height: 70%;
+    }
+    .main_section {
+      left: 3%;
+      height: 94.5%;
+    }
+    #pets_button {
+      left: 26%;
+      bottom: 3.3%;
+    }
+    #videos_button {
+      left: 46%;
+      bottom: 3.3%;
+    }
+    #jogos_button {
+      left: 66%;
+      bottom: 3.3%;
+    }
+    footer {
+      display: flex;
+      width: 70%;
+      height: 14%;
+      margin-left: 15%;
+      margin-top: 53%;
+    }
+
+    @media (max-width: 713px) {
+     
+      .headers_image {
+        left: 20%;
+        top: 2.5vw;
+        width: 60%;
+    }
+      main {
+      height: 80.5%;
+    }
+    .main_section {
+      margin-top: 3%;
+      width: 93%;
+      left: 3%;
+      height: 96.5%;
+    }
+    #pets_button {
+      left: 28%;
+      bottom: 4.3%;
+    }
+    #videos_button {
+      left: 46%;
+      bottom: 4.3%;
+    }
+    #jogos_button {
+      left: 64%;
+      bottom: 4.3%;
+    }
+    footer {
+      display: flex;
+      width: 70%;
+      height: 11%;
+      margin-left: 15%;
+      margin-top: 125%;
+    }
+
+  @media (max-width: 670px) {
+  .logo { 
+    font-size: 34px;
+   }
+
+  @media (max-width: 628px) {
+  .logo { 
+    font-size: 30px;
+   }
+
+  @media (max-width: 556px) {
+  .logo { 
+    font-size: 27px;
+   }
+
+  @media (max-width: 484px) {
+  .logo { 
+    font-size: 23.5px;
+   }
+
+ @media (max-width: 413px) {
+    .logo { 
+      font-size: 20px; }
+    }
+    .headers_image {
+      left: 10%;
+      top: 1vw;
+      width: 80%;
+  }
+    main {
+      height: 81.6%;
+      width: 95%;
+      left: 2.5%;
+      top: 14.2vw;
+    }
+    .pets_cards {
+      height: 100%;
+    }
+    #pets_button {
+      left: 12%;
+      bottom: 20%;
+    }
+    #videos_button {
+      left: 42%;
+      bottom: 20%;
+    }
+    #jogos_button {
+      left: 72%;
+      bottom: 20%;
+    }
+    footer {
+      position: absolute;
+      bottom: 1%;
+      width: 95%;
+      margin-left: 2.5%;
+    }
+  }
+    
+  @media (max-width: 341px) {
+  .logo { 
+    font-size: 16.5px;
+   }
+   .main_default {
+    height: 50%;
+  }
+  .pets_cards {
+    height: 97.5%;
+  }
+  #pets_button {
+    
+    bottom: -13.5%;
+  }
+  #videos_button {
+    left: 39%;
+    bottom: -13.5%;
+  }
+  #jogos_button {
+    left: 72%;
+    bottom: -13.5%;
+  }
+  
+  @media (max-width: 269px) {
+    .logo { 
+    font-size: 13px;
+   }
+
+  @media (max-width: 197px) {
+  .logo { 
+      font-size: 9,5px;
+   }
+
+   @media (max-width: 150px) {
+    .logo { 
+      font-size: 24px; }
+    main {
+      height: 82%;
+    }
+    .pets_cards {
+      height: 97.5%;
+    }
+    #pets_button {
+      
+      bottom: -13.5%;
+    }
+    #videos_button {
+      left: 39%;
+      bottom: -13.5%;
+    }
+    #jogos_button {
+      left: 72%;
+      bottom: -13.5%;
+    }
+
+  @media (max-width: 126px) {
+  .logo { 
+        font-size: 6px;}

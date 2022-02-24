@@ -1,59 +1,77 @@
 @import url('https://fonts.googleapis.com/css2?family=Love+Light&display=swap');
 
+
 /* Body */
 
 body {
-    border: 0px;
-    margin: 0px;
-    background-color: rgb(255, 255, 255);
-    height: 100vh;
-  }
-
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  border: 0px;
+  margin: 0px;
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  cursor: url(img/cat_paw_cursor.png), pointer;
+  flex-direction: column;
+  align-items: center;
+}
+  
   /* Header */
 
-  .logo {   
-    position: absolute;   
+  header {
+    position: relative;
+    display: flex;
+    width: 100%;
+    height: 17%;
+    margin-top: 0%;
     font-weight: 800;
-    left: 50%;
-    top: .8vw;
-    transform: translateX(-50%);
     font-family: 'Love Light', cursive;
-    color: rgb(212, 0, 255);
-    font-size: 46px;
-    letter-spacing: 1vw;
     word-spacing: 1.3vw;
     text-decoration: none;
+    align-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+  h1 {
+    margin: 0;
+    border: 0;
+    height: 42%;
+    margin-top: 0;
+    font-size: 4vh;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #039af4);
+    background-clip: 0;
+    color: #1900ffad;
+    z-index: 2;
   }
 
   .headers_image {
-    position: relative;
-    left: 15%;
-    top: 3.5vw;
-    width: 70%;
-    background: rgba(255, 255, 255, 0);
+    width: 66%;
+    margin-top: -39px;
     z-index: 1;
-  }
+}
 
 
   /* Main */
 
   main {
     display: flex;
-    position: absolute;
-    left: 15%;
     top: 15.2vw;
     background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #039af4);
     width: 70%;
-    height: 62%;
+    height: 72vh;
     flex-direction: row;
     flex-wrap: wrap;
     align-content: flex-start;
     justify-content: center;
     align-items: baseline;
-    box-shadow: inset 0px 0px 12px #3A395C;
-   
-   
-  }
+    box-shadow: inset 0px 0px 12px #3a395c;
+    border-top-left-radius: 4vh;
+    border-top-right-radius: 4vh;
+    border-bottom-left-radius: 4vh;
+    border-bottom-right-radius: 4vh;
+}
 
   main a {
     position: absolute;
@@ -76,8 +94,8 @@ body {
     display: flex;
     background-color: rgba(255, 255, 255, 0.419);
     width: 95%;
-    margin-top: 3%; 
-    height: 93%;
+    margin-top: 2.5%; 
+    height: 92%;
     align-items: flex-start;
     flex-wrap: wrap;
     align-content: space-around;
@@ -90,144 +108,131 @@ body {
     box-shadow: inset 0 0 1em rgb(0, 255, 208);
     box-shadow: 0 0 1em rgb(0, 255, 208);
   }
-
-    #pets_button {
-    position: absolute;
-    left: 7.5%;
-    bottom: -17.5%;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    align-content: center;
-    background: rgba(0, 0, 0, 0.385);
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    border-radius: 100%;
-    }
-
-    /* Footer */
+  
+/* Footer */
 
     footer {
+      position: relative;
       display: flex;
-      width: 70%;
-      height: 13%;
-      margin-left: 15%;
-      background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #039af4);
-      margin-top: 55.7vh;
-      z-index: 120;
-      box-shadow: inset 0px 0px 12px #3A395C;
+      width: 40%;
+      height: 11.5%;
+      background: linear-gradient(90deg, rgb(3, 169, 244), rgb(244, 65, 165), rgb(255, 235, 59), rgb(3, 154, 244));
+      box-shadow: rgb(58 57 92) 0px 0px 12px inset;
       border-bottom-left-radius: 6vh;
       border-bottom-right-radius: 6vh;
-    }
-
-    #videos_button {
-      position: absolute;
-      left: 20.5%;
-      bottom: -17.5%;
-      width: 60px;
-      height: 60px;
-      display: flex;
-      align-content: center;
-      background: rgba(0, 0, 0, 0.385);
+      z-index: -1;
+      align-items: center;
+      place-content: center space-around;
       flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-      border-radius: 100%;
+      align-content: center;
+      justify-content: space-around;
       }
-  
-      #jogos_button {
-        position: absolute;
-        left: 33.5%;
-        bottom: -17.5%;
-        width: 60px;
-        height: 60px;
-        display: flex;
-        align-content: center;
-        background: rgba(0, 0, 0, 0.385);
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        overflow: hidden;
-        border-radius: 100%;
-        }
 
-    .footer_buttons::before {
+    footer nav {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      flex-direction: row;
+      column-gap: 7%;
+      flex-wrap: nowrap;
+      align-content: center;
+      justify-content: space-evenly;
+      gap: 2%;
+      align-items: center;
+     }
+     
+     button {
+      position: relative;
+      width: 10vh;
+      height: 9.9vh;
+      border-radius: 50%;
+      overflow: hidden;
+      border: none;
+     }
+
+     #pets_button h2 {
+      position: relative;
+      display: flex;
+      z-index: 1;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: nowrap;
+      background: rgb(70, 98, 255);
+      width: 100%;
+      height: 84%;
+      align-items: center;
+      border-radius: 50%;
+      top: -12px;
+     }
+
+     #videos_button h2 {
+      position: relative;
+      display: flex;
+      z-index: 1;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: nowrap;
+      background: rgb(255, 0, 0);
+      width: 100%;
+      height: 84%;
+      align-items: center;
+      border-radius: 50%;
+      top: -12px;
+     }
+
+     #gifs_button h2 {
+      position: relative;
+      display: flex;
+      z-index: 1;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: nowrap;
+      background: rgb(72, 255, 0);
+      width: 100%;
+      height: 84%;
+      align-items: center;
+      border-radius: 50%;
+      top: -12px;
+     }
+
+     #jogos_button h2 {
+      position: relative;
+      display: flex;
+      z-index: 1;
+      justify-content: center;
+      align-content: center;
+      flex-wrap: nowrap;
+      background: rgb(255, 225, 0);
+      width: 100%;
+      height: 84%;
+      align-items: center;
+      border-radius: 50%;
+      top: -12px;
+     }
+
+     .footer_buttons::before {
       content: "";
       position: absolute;
-      gap: 20px;
+      left: -2px;
+      top: -1px;
       width: 110%;
       height: 110%;
       background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #039af4);
-      box-shadow: inset 0 0 1em rgb(0, 255, 208);
-    }
-
-    .footer_buttons:hover:before
-     {
-      content: " ";
-      position: absolute;
-      width: 110%;
-      height: 110%;
-      background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #039af4);
-      animation: animate 1.3s linear infinite;
-    }
-
-    .footer_buttons::after
-    {
+      box-shadow: inset 1px -4px 4em 19px rgb(0 0 0 / 37%);
+     }
+       
+     .footer_buttons::after {
       content: "";
       position: absolute;
-      top: 0;
-      inset: 5px;
-      background: rgb(255, 255, 255);
-      border-radius: 50px;
-      box-shadow:  0 0 .7em rgba(0, 0, 0, 0.467);
+      inset: .9vh;
+      border-radius: 50%;
+      box-shadow: inset 20px -19px 1.5em 2px rgb(0 0 0 / 47%);
       overflow: hidden;
       align-items: center;
-    }
-
-    #pets_button h2 
-    {
-      display: flex;
-      z-index: 1;
-    }
-
-    .pets_button_image {
-      width: 42px;
-      height: 42px;
-     
-    }
-
-    #videos_button h2 
-    {
-      display: flex;
-      z-index: 1;
-    }
-
-    .videos_button_image {
-      width: 42px;
-      height: 42px;
-    }
-
-    #jogos_button h2 
-    {
-      display: flex;
-      z-index: 1;
-    }
-
-    .jogos_button_image {
-      display: flex;
-      width: 42px;
-      height: 42px;
-      
-    }
+     }
 
     
-     /* Key Frames */ 
+ /* Key Frames */ 
 
     @keyframes animate
      {
@@ -244,194 +249,4 @@ body {
     }
 
 
-    /* @medias */
-
-  @media (max-width: 1470px) {
-    .logo { 
-      font-size: 70px;
-    }
-    main {
-      height: 60%;
-    }
-    .pets_cards {
-      left: 3%;
-      height: 90%;
-    }
-    #pets_button {
-      left: 20%;
-      bottom: -18.5%;
-    }
-    #videos_button {
-      left: 45%;
-      bottom: -18.5%;
-    }
-    #jogos_button {
-      left: 72%;
-      bottom: -18.5%;
-    }
-
-  @media (max-width: 1360px) {
-    .logo { 
-      font-size: 65px;
-    }
    
-  @media (max-width: 1280px) {
-    .logo { 
-      font-size: 60px;
-    }
-    
-  @media (max-width: 1130px) {
-    .logo { 
-      font-size: 55px;
-    }
-
-  @media (max-width: 1030px) {
-    .logo { 
-      font-size: 50px;
-    }
-  
-  @media (max-width: 1058px) {
-  .logo { 
-    font-size: 51px;
-    }
-
-  @media (max-width: 986px) {
-  .logo { 
-    font-size: 48px;
-    }
-
-  @media (max-width: 915px) {
-  .logo { 
-    font-size: 44px;
-    }
-    main {
-      height: 66%;
-    }
-
-  @media (max-width: 843px) {
-  .logo { 
-    font-size: 41px;
-    }
-
-  @media (max-width: 771px) {
-  .logo { 
-    font-size: 37px;
-    }
-
-  @media (max-width: 771px) {
-  .logo { 
-    font-size: 37px;
-   }
-
-  @media (max-width: 670px) {
-  .logo { 
-    font-size: 34px;
-   }
-
-  @media (max-width: 628px) {
-  .logo { 
-    font-size: 30px;
-   }
-
-  @media (max-width: 556px) {
-  .logo { 
-    font-size: 27px;
-   }
-
-  @media (max-width: 484px) {
-  .logo { 
-    font-size: 23.5px;
-   }
-
- @media (max-width: 413px) and (orientation: landscape) {
-    .logo { 
-      font-size: 54px; }
-     
-    }
-    main {
-      height: 79%;
-      width: 95%;
-      left: 2.5%;
-    }
-    .pets_cards {
-      height: 100%;
-    }
-    #pets_button {
-      left: 12%;
-      bottom: -13.5%;
-    }
-    #videos_button {
-      left: 42%;
-      bottom: -13.5%;
-    }
-    #jogos_button {
-      left: 72%;
-      bottom: -13.5%;
-    }
-    footer {
-      position: absolute;
-      bottom: 1.5%;
-      width: 95%;
-      margin-left: 2.5%;
-     z-index: -1;
-    }
-  }
-    
-  @media (max-width: 341px) {
-  .logo { 
-    font-size: 16.5px;
-   }
-   .main_default {
-    height: 50%;
-  }
-  .pets_cards {
-    height: 97.5%;
-  }
-  #pets_button {
-    
-    bottom: -13.5%;
-  }
-  #videos_button {
-    left: 39%;
-    bottom: -13.5%;
-  }
-  #jogos_button {
-    left: 72%;
-    bottom: -13.5%;
-  }
-  
-  @media (max-width: 269px) {
-    .logo { 
-    font-size: 13px;
-   }
-
-  @media (max-width: 197px) {
-  .logo { 
-      font-size: 9,5px;
-   }
-
-   @media (max-width: 150px) {
-    .logo { 
-      font-size: 24px; }
-    main {
-      height: 82%;
-    }
-    .pets_cards {
-      height: 97.5%;
-    }
-    #pets_button {
-      
-      bottom: -13.5%;
-    }
-    #videos_button {
-      left: 39%;
-      bottom: -13.5%;
-    }
-    #jogos_button {
-      left: 72%;
-      bottom: -13.5%;
-    }
-
-  @media (max-width: 126px) {
-  .logo { 
-        font-size: 6px;}
