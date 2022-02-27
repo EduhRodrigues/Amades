@@ -58,50 +58,49 @@ body {
     display: flex;
     top: 15.2vw;
     background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #039af4);
-    width: 70%;
+    width: 100vw;
     height: 72vh;
     flex-direction: row;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    justify-content: center;
-    align-items: baseline;
+    justify-content: space-evenly;
+    align-items: center;
     box-shadow: inset 0px 0px 12px #3a395c;
     border-top-left-radius: 4vh;
     border-top-right-radius: 4vh;
     border-bottom-left-radius: 4vh;
     border-bottom-right-radius: 4vh;
-     }
+    flex-wrap: nowrap;
+    align-content: center;
+}
 
-    .main_section {
-      display: flex;
-      background-color: rgba(255, 255, 255, 0.419);
-      width: 95%;
-      margin-top: 2.5%; 
-      height: 92%;
-      align-items: flex-start;
-      flex-wrap: wrap;
-      align-content: space-around;
-      justify-content: space-around;
-      flex-direction: row;
-      border-radius: 3vh;
-      border: solid;
-      border-width: .3px;
-      border-color: rgba(0, 255, 255, 0.809);
-      box-shadow: inset 0 0 1em rgb(0, 255, 208);
-      box-shadow: 0 0 1em rgb(0, 255, 208);
-       }
+.main_section {
+  margin-left: 15vw;
+  position: relative;
+  display: flex;
+  background-color: rgba(255, 255, 255, 0.419);
+  width: 68vw;
+  height: 92%;
+  align-items: baseline;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: space-evenly;
+  flex-direction: row;
+  border-radius: 3vh;
+  border: solid;
+  border-width: 1vh;
+  border-color: rgba(0, 255, 255, 0.809);
+  box-shadow: inset 0 0 1em rgb(0, 255, 208);
+  box-shadow: 0 0 1em rgb(0, 255, 208);
+}
 
-     .right_section {
-      display: flex;
-      position: absolute;
-      top: 20vh;
-      width: 24vh;
-      right: 0vh;
-      height: 62vh;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-      }
+.right_section {
+  display: flex;
+  height: 69vh;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
      .right_section img {
       margin: 1vh;
