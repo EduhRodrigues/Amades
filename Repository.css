@@ -1,3 +1,128 @@
+
+/* Botão Inativo Default */
+
+.footer_buttons::after {
+  content: "";
+  position: absolute;
+  inset: -0.8vh;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 0em 3px #000000;
+  overflow: hidden;
+  align-items: center;
+}
+
+/* Botão Ativo Default */
+
+.footer_buttons::after {
+  content: "";
+  position: absolute;
+  inset: -.8vh;
+  border-radius: 50%;
+  box-shadow: inset 0px 1px 1em 2.5px #000000;
+  overflow: hidden;
+  align-items: center;
+}
+
+/* Botão Hover Default */
+
+.footer_buttons::after {
+  content: "";
+  position: absolute;
+  inset: -.8vh;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 0em 2.5px #007aff;
+  overflow: hidden;
+  align-items: center;
+}
+
+
+
+
+
+/* Modelo Botão Pressionado */
+
+.footer_buttons::after {
+  content: "";
+  position: absolute;
+  inset: -1vh;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 1em -3px black;
+  overflow: hidden;
+  align-items: center;
+}
+
+/* Modelo Botão Pressionado (pouca diferença)*/
+
+.footer_buttons::after {
+  content: "";
+  position: absolute;
+  inset: -1vh;
+  border-radius: 50%;
+  box-shadow: inset 0px 0.5px 6px 1px black;
+  overflow: hidden;
+  align-items: center;
+}
+
+/* Modelo 1 Botao Inativo */
+
+.footer_buttons::after {
+  content: "";
+  position: absolute;
+  inset: -1vh;
+  border-radius: 50%;
+  box-shadow: 0px -2px 1em 4px black;
+  overflow: hidden;
+  align-items: center;
+}
+
+/* Modelo 2 Botao Inativo (pouca diferença) */
+
+.footer_buttons::after {
+  content: "";
+  position: absolute;
+  inset: -1vh;
+  border-radius: 50%;
+  box-shadow: 0px -2px 1.5em 2px black;
+  overflow: hidden;
+}
+  
+  /* Modelo 3 Botao Inativo */
+  
+.footer_buttons::after {
+  content: "";
+  position: absolute;
+  inset: -0.5vh;
+  border-radius: 50%;
+  box-shadow: 0px -2px 1em 4px #0000008f;
+  overflow: hidden;
+  align-items: center;
+}
+
+/* Modelo 4 Botao Inativo */
+
+.footer_buttons::after {
+  content: "";
+  position: absolute;
+  inset: -.8vh;
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 0em 2.5px #ffffff;
+  overflow: hidden;
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .footer_buttons::before {
     content: "";
     position: absolute;
@@ -339,3 +464,22 @@
   @media (max-width: 126px) {
   .logo { 
         font-size: 6px;}
+
+        .footer_buttons::before {
+          content: "";
+          position: absolute;
+          left: -2px;
+          top: -1px;
+          width: 110%;
+          height: 110%;
+        }
+        
+        .footer_buttons::after {
+          content: "";
+          position: absolute;
+          inset: -1vh;
+          border-radius: 50%;
+          box-shadow: inset 20px -19px 1.5em 2px rgb(0 0 0 / 47%);
+          overflow: hidden;
+          align-items: center;
+        }
