@@ -23,8 +23,8 @@ body {
   header {
     position: relative;
     display: flex;
-    width: 100%;
-    height: 15.7vh;
+    width: 100vw;
+    height: 15.8vh;
     margin-top: 0%;
     font-weight: 800;
     font-family: 'Love Light', cursive;
@@ -34,81 +34,124 @@ body {
     flex-direction: column;
     align-items: center;
 }
-  h1 {
-    margin: 0;
-    border: 0;
-    height: 42%;
-    margin-top: 0;
-    font-size: 4vh;
-    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #039af4);
-    background-clip: 0;
-    color: #1900ffad;
-    z-index: 2;
-    }
 
-    .headers_image {
-      display: block;
-      position: relative;
-      width: 69vh;
-      min-width: 50vh;
-      margin-top: -10px;
-      z-index: 1;
-  }
+h1 {
+  margin: 0;
+  font-family: 'Love Light', cursive;
+  font-size: 3rem;
+  color: #e651ff;
+  cursor: pointer;
+  z-index: 4;
+}
+
+.headers_image {
+  width: 69vh;
+  margin-top: -6.2vh;
+  z-index: 3;
+}
 
   /* Main */
 
   main {
-    display: flex;
-    top: 15.2vw;
-    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #039af4);
+    display: inline-flex;
     width: 100vw;
-    height: 72vh;
+    height: auto;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
-    box-shadow: inset 0px 0px 12px #3a395c;
-    border-top-left-radius: 4vh;
-    border-top-right-radius: 4vh;
-    border-bottom-left-radius: 4vh;
-    border-bottom-right-radius: 4vh;
-    flex-wrap: nowrap;
     align-content: center;
+    flex-wrap: nowrap;
+    box-shadow: inset 0px 0px 12px #3a395c;
+    border-radius: 4vh;
+    background-color: white;
+    z-index: 2;
+  }
+  
+  .main_section_container {
+    display: flex;
+    height: 69.5vh;
+    width: 100%;
+    border-radius: 6vh;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #039af4);
+    box-shadow: inset 0px 0px 12px #3a395c;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
 }
 
 .main_section {
-  margin-left: 15vw;
-  position: relative;
-  display: flex;
   background-color: rgba(255, 255, 255, 0.419);
-  width: 68vw;
-  height: 92%;
-  align-items: baseline;
-  flex-wrap: nowrap;
-  align-content: center;
-  justify-content: space-evenly;
-  flex-direction: row;
+  width: 100%;
+  height: 88%;
+  margin: 4vh;
   border-radius: 3vh;
-  border: solid;
-  border-width: 1vh;
-  border-color: rgba(0, 255, 255, 0.809);
-  box-shadow: inset 0 0 1em rgb(0, 255, 208);
   box-shadow: 0 0 1em rgb(0, 255, 208);
+}
+.left_section {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-items: center;
+  height: 80%;
+  width: 10%;
+  border-top-left-radius: 6vh;
+  border-bottom-left-radius: 6vh;
+  justify-content: space-evenly;
+  background: linear-gradient(0deg, #03a9f4, #f441a5, #ffeb3b, #039af4);
+  box-shadow: inset 0px 0px 12px #3a395c;
+}
+
+.lef_section img {
+  margin: 2vh;
+  width: 11vh;
+}
+
+#cuidados_image {
+  width: 11vh;
+}
+
+#artigos_image {
+  width: 11vh;
+}
+
+#links_image {
+   
 }
 
 .right_section {
   display: flex;
-  height: 69vh;
-  flex-direction: column;
   flex-wrap: nowrap;
-  align-content: center;
+  flex-direction: column;
   align-items: center;
+  height: 80%;
+  width: 10%;
+  border-top-right-radius: 6vh;
+  border-bottom-right-radius: 6vh;
   justify-content: space-evenly;
+  background: linear-gradient(0deg, #03a9f4, #f441a5, #ffeb3b, #039af4);
+  box-shadow: inset 0px 0px 12px #3a395c;
 }
 
-     .right_section img {
-      margin: 1vh;
-      width: 20vh;
-     }
+.right_section img {
+  margin: 2vh;
+  width: 15vh;
+}
+
+
+#adote_image {
+
+}
+
+#doe_image {
+  width: 13vh;
+}
+
+#report_image {
+  width: 13vh;
+ 
+}
   
 /* Footer */
 
@@ -116,6 +159,7 @@ body {
       position: relative;
       display: flex;
       width: 40%;
+      min-width: 30%;
       height: 15%;
       background: linear-gradient(90deg, rgb(3, 169, 244), rgb(244, 65, 165), rgb(255, 235, 59), rgb(3, 154, 244));
       box-shadow: rgb(58 57 92) 0px 0px 12px inset;
@@ -139,7 +183,7 @@ body {
         align-items: center;
         justify-content: space-evenly;
         flex-wrap: wrap;
-       }
+         }
 
         button {
           position: relative;

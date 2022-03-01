@@ -1,3 +1,29 @@
+main {
+  display: inline-flex;
+  width: 100vw;
+  height: 70%;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  box-shadow: inset 0px 0px 12px #3a395c;
+  border-radius: 4vh;
+  background-color: white;
+}
+
+.main_section_container {
+height: 69.5vh;
+width: 130vh;
+border-radius: 6vh;
+background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #039af4);
+box-shadow: inset 0px 0px 12px #3a395c;
+}
+
+
+
+
+
 
 /* Botão Inativo Default */
 
@@ -89,13 +115,8 @@
   /* Modelo 3 Botao Inativo */
   
 .footer_buttons::after {
-  content: "";
-  position: absolute;
-  inset: -0.5vh;
-  border-radius: 50%;
-  box-shadow: 0px -2px 1em 4px #0000008f;
-  overflow: hidden;
-  align-items: center;
+ 
+  
 }
 
 /* Modelo 4 Botao Inativo */
