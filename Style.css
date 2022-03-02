@@ -89,7 +89,7 @@ h1 {
   border-radius: 3vh;
   box-shadow: 0 0 1em rgb(0, 255, 208);
 }
-.left_section {
+.left_nav {
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
@@ -98,26 +98,83 @@ h1 {
   width: 10%;
   border-top-left-radius: 6vh;
   border-bottom-left-radius: 6vh;
+  padding: 1vh;
   justify-content: space-evenly;
   background: linear-gradient(0deg, #03a9f4, #f441a5, #ffeb3b, #039af4);
   box-shadow: inset 0px 0px 12px #3a395c;
 }
 
-.left_section img {
+.left_nav img {
   margin: 2vh;
   width: 13vh;
+  border: 0;
+  z-index: 51;
 }
 
-#cuidados_image {
-
+.left_nav button {
+  position: relative;
+  width: 10vh;
+  height: 10vh;
+  border: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  background: none;
+  display: flex;
+  border-radius: 50%;
+  align-items: center;
 }
 
-#artigos_image {
-
+.left_nav_buttons::after {
+  display: flex;
+  content: "";
+  position: absolute;
+  margin-left: .9vh;
+  margin-top: -0.15vh;
+  height: 10.2vh;
+  width: 10.2vh;
+  inset: -1vh;
+  border-radius: 50%;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  box-shadow: inset 0px 0px 1em 0px #000000bd;
 }
 
-#links_image {
-   
+.left_nav_buttons:hover::after {
+  content: "";
+  transform: scale(1.05);
+  transition: .2s;
+}
+
+.left_nav_buttons:focus::after {
+  content: "";
+  box-shadow: inset 0px 0px 1em 0px #00000098;
+  transition: .2s;
+}
+
+#saude_image:active {
+ content: "";
+ transform: scale(1.05);
+ transition: .2s;
+}
+
+#artigos_image:active {
+  content: "";
+  transform: scale(1.05);
+  transition: .2s;
+}
+
+#links_image:active {
+  content: "";
+  transform: scale(1.05);
+  transition: .2s;
 }
 
 .right_section {
@@ -137,6 +194,7 @@ h1 {
 .right_section img {
   margin: 2vh;
   width: 13vh;
+  cursor: pointer;
 }
 
 
@@ -183,7 +241,7 @@ h1 {
         flex-wrap: wrap;
          }
 
-        button {
+        footer nav button {
           position: relative;
           width: 7vh;
           height: 7vh;
