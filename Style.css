@@ -103,17 +103,17 @@ h1 {
   box-shadow: inset 0px 0px 12px #3a395c;
 }
 
-.lef_section img {
+.left_section img {
   margin: 2vh;
-  width: 11vh;
+  width: 13vh;
 }
 
 #cuidados_image {
-  width: 11vh;
+
 }
 
 #artigos_image {
-  width: 11vh;
+
 }
 
 #links_image {
@@ -136,7 +136,7 @@ h1 {
 
 .right_section img {
   margin: 2vh;
-  width: 15vh;
+  width: 13vh;
 }
 
 
@@ -145,12 +145,11 @@ h1 {
 }
 
 #doe_image {
-  width: 13vh;
+ 
 }
 
-#report_image {
-  width: 13vh;
- 
+#denuncie_image {
+
 }
   
 /* Footer */
