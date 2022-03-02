@@ -7,7 +7,7 @@ body {
   position: relative;
   display: flex;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   border: 0px;
   margin: 0px;
   background-color: rgb(255, 255, 255);
@@ -55,7 +55,7 @@ h1 {
   main {
     display: inline-flex;
     width: 100vw;
-    height: auto;
+    height: 100%;
     flex-direction: row;
     justify-content: center;
     align-items: center;
@@ -69,7 +69,7 @@ h1 {
   
   .main_section_container {
     display: flex;
-    height: 69.5vh;
+    height: 100%;
     width: 100%;
     border-radius: 6vh;
     background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #039af4);
@@ -158,8 +158,7 @@ h1 {
       position: relative;
       display: flex;
       width: 40%;
-      min-width: 30%;
-      height: 15%;
+      height: 21%;
       background: linear-gradient(90deg, rgb(3, 169, 244), rgb(244, 65, 165), rgb(255, 235, 59), rgb(3, 154, 244));
       box-shadow: rgb(58 57 92) 0px 0px 12px inset;
       border-bottom-left-radius: 6vh;
