@@ -132,11 +132,12 @@ h1 {
   opacity: 0;
   position: absolute;
   width: 10vh;
+  margin-left: 0vh;
   height: 10vh;
   top: -0.9vh;
   left: -.7vh;
   border-radius: 50%;
-  background: linear-gradient(0deg, #039af4, #ffffff, #ffffff, #ffffff);
+  background: linear-gradient(0deg, #039af4, #039af4,  #039af400, #ffffff95, #ffffff);
 }
 
   .left_nav_buttons:focus::before {
@@ -161,8 +162,8 @@ h1 {
   content: "";
   position: absolute;
   margin-top: 1.2vh;
-  height: 10vh;
-  width: 10vh;
+  height: 9.5vh;
+  width: 9.5vh;
   border-radius: 50%;
   overflow: hidden;
   align-items: center;
@@ -179,7 +180,7 @@ transform: scale(1.08);
 
 
 .left_nav_buttons:focus::after {
-  content: "";
+
 }
 
 #saude_image:hover {
@@ -187,7 +188,7 @@ transform: scale(1.08);
   transform: scale(1.08);
 }
 
-#saude_image:active:hover {
+#saude_image:focus:hover {
   content: "";
   transform: scale(1.08);
 }
