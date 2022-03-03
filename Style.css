@@ -100,43 +100,69 @@ h1 {
   border-bottom-left-radius: 6vh;
   padding: 1vh;
   justify-content: space-evenly;
-  background: linear-gradient(0deg, #03a9f4, #f441a5, #ffeb3b, #039af4);
+  background: linear-gradient(0deg,#03a9f4, #03a9f4);
   box-shadow: inset 0px 0px 12px #3a395c;
 }
 
 .left_nav img {
   margin: 2vh;
-  width: 13vh;
+  width: 11.5vh;
   border: 0;
   z-index: 51;
 }
 
 .left_nav button {
   position: relative;
-  width: 10vh;
-  height: 10vh;
+  width: 8.5vh;
+  height: 7.2vh;
   border: 0;
   padding: 0;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
   flex-wrap: nowrap;
   align-content: center;
-  background: none;
   display: flex;
   border-radius: 50%;
   align-items: center;
+  background: #00000000;
 }
 
+.left_nav_buttons::before {
+  content: "";
+  opacity: 0;
+  position: absolute;
+  width: 10vh;
+  height: 10vh;
+  top: -0.9vh;
+  left: -.7vh;
+  border-radius: 50%;
+  background: linear-gradient(0deg, #039af4, #ffffff, #ffffff, #ffffff);
+}
+
+  .left_nav_buttons:focus::before {
+    content: "";
+    opacity: 1;
+    animation-name: spin;
+    animation-duration: .5s;
+    animation-iteration-count: 1;
+    }
+
+ @keyframes spin {
+    from {
+        transform:rotate(210deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+ 
 .left_nav_buttons::after {
   display: flex;
   content: "";
   position: absolute;
-  margin-left: .9vh;
-  margin-top: -0.15vh;
-  height: 10.2vh;
-  width: 10.2vh;
-  inset: -1vh;
+  margin-top: 1.2vh;
+  height: 10vh;
+  width: 10vh;
   border-radius: 50%;
   overflow: hidden;
   align-items: center;
@@ -144,37 +170,44 @@ h1 {
   align-content: center;
   flex-wrap: nowrap;
   flex-direction: column;
-  box-shadow: inset 0px 0px 1em 0px #000000bd;
+  box-shadow: inset 0px 0px 1em 3px #ffffff;
 }
 
 .left_nav_buttons:hover::after {
-  content: "";
-  transform: scale(1.05);
-  transition: .2s;
+transform: scale(1.08);
 }
+
 
 .left_nav_buttons:focus::after {
   content: "";
-  box-shadow: inset 0px 0px 1em 0px #00000098;
-  transition: .2s;
 }
 
-#saude_image:active {
- content: "";
- transform: scale(1.05);
- transition: .2s;
+#saude_image:hover {
+  content: "";
+  transform: scale(1.08);
+}
+
+#saude_image:active:hover {
+  content: "";
+  transform: scale(1.08);
+}
+
+#artigos_image:hover {
+  content: "";
+  transform: scale(1.08);
 }
 
 #artigos_image:active {
   content: "";
-  transform: scale(1.05);
-  transition: .2s;
+}
+
+#links_image:hover {
+  content: "";
+  transform: scale(1.08);
 }
 
 #links_image:active {
   content: "";
-  transform: scale(1.05);
-  transition: .2s;
 }
 
 .right_section {
