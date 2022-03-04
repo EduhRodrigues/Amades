@@ -20,7 +20,55 @@ body {
   background-size: 100%;
   background-repeat: no-repeat;
    }
-  
+
+   .cao_gif {
+    width: 20vh;
+    position: absolute;
+    left: 14.5vh;
+    bottom: 1.5vh;
+    z-index: 3;
+    transform: scalex(-1) rotate(8deg);
+}
+
+.doginho_gif {
+  width: 11vh;
+  position: absolute;
+  left: 112.5vh;
+  bottom: 5vh;
+  z-index: 4;
+  transform: rotate(360deg);
+}
+
+.jupiter_image {
+  width: 14vh;
+  position: absolute;
+  right: 23vh;
+  top: 7vh;
+}
+
+.foto_container {
+  display: flex;
+  z-index: 6;
+  width: 11vh;
+  height: 16vh;
+  position: absolute;
+  right: 0vh;
+  bottom: 0;
+  background: url("img/usha1_image.png") no-repeat;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.foto_container:hover {
+ background: url("img/usha2_image.png") no-repeat;
+ transition: .3s ease-in-out;
+ size: 10vh;
+}
+
+
   /* Header */
 
   header {
@@ -36,23 +84,23 @@ body {
     align-content: center;
     flex-direction: column;
     align-items: center;
-}
+     }
 
-h1 {
-  margin: 0;
-  font-family: 'Love Light', cursive;
-  font-size: 3rem;
-  color: #00000063;
-  cursor: pointer;
-  z-index: 4;
-}
+     h1 {
+      margin: 0;
+      font-family: 'Love Light', cursive;
+      font-size: 3rem;
+      color: #00000063;
+      cursor: pointer;
+      z-index: 4;
+       }
 
-h1:hover {
-  transform: scale(1.1);
-}
+      h1:hover {
+       transform: scale(1.1);
+       }
 
 .menu_image {
-  width: 5vh;
+  width: 4.7vh;
   position: absolute;
   right: 59vh;
   top: 2.2vh;
@@ -60,31 +108,32 @@ h1:hover {
   transform: rotate(0deg);
   cursor: pointer;
 }
-.menu_image:hover {
-  animation: wave 0.82s cubic-bezier(.36,.07,.19,.97) both;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;
-  perspective: 1000px;
-  cursor: none;
-}
 
-@keyframes wave {
-  10%, 90% {
-    transform: rotate(0deg);
-  }
-  
-  20%, 80% {
-    transform: rotate(-10deg);
-  }
+  .menu_image:hover {
+    animation: wave 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+    cursor: none;
+     }
 
-  30%, 50%, 70% {
-    transform: rotate(-15deg);
-  }
+      @keyframes wave {
+        10%, 90% {
+          transform: rotate(0deg);
+        }
+        
+        20%, 80% {
+          transform: rotate(-10deg);
+        }
 
-  40%, 60% {
-    transform: rotate(0deg);
-  }
-}
+        30%, 50%, 70% {
+          transform: rotate(-15deg);
+        }
+
+        40%, 60% {
+          transform: rotate(0deg);
+        }
+      }
 
 .soung_image {
   width: 5vh;
@@ -123,23 +172,23 @@ h1:hover {
   z-index: 3;
 }
 
-@keyframes shake {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-  
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
+  @keyframes shake {
+     10%, 90% {
+      transform: translate3d(-1px, 0, 0);
+     }
+    
+     20%, 80% {
+      transform: translate3d(2px, 0, 0);
+     }
 
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
-  }
+     30%, 50%, 70% {
+      transform: translate3d(-4px, 0, 0);
+     }
 
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
+     40%, 60% {
+      transform: translate3d(4px, 0, 0);
+     }
   }
-}
 
 
   /* Main */
@@ -518,18 +567,4 @@ transform: scale(1.08);
                 box-shadow: inset 0px 1px 1em 5px #000000; 
                 transition: .01s;
               }
-
- /* Key Frames */ 
-
-    @keyframes animate
-     {
-         0% {transform: scale(0)}
-        20% {transform: scale(125)}
-        40% {transform: scale(150)}
-        60% {transform: scale(150)}
-        80% {transform: scale(125)}
-       100% {transform: scale(1)}
-       }
-
-
    
