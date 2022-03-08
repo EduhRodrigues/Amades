@@ -21,20 +21,20 @@ body {
   background-repeat: no-repeat;
    }
 
-   .cao_gif {
-    width: 20vh;
+   audio {
     position: absolute;
-    left: 14.5vh;
-    bottom: 1.5vh;
-    z-index: 3;
-    transform: scalex(-1) rotate(8deg);
+    top: 2vh;
+    right: 18vh;
+    width: 27.5vh;
+    height: 3.5vh;
+    z-index: 6;
 }
 
-.doginho_gif {
-  width: 11vh;
+.dog_digging_gif {
+  width: 6vh;
   position: absolute;
-  left: 112.5vh;
-  bottom: 5vh;
+  left: 99.5vh;
+  bottom: 37vh;
   z-index: 4;
   transform: rotate(360deg);
 }
@@ -86,27 +86,39 @@ body {
     align-items: center;
      }
 
-     h1 {
-      margin: 0;
-      font-family: 'Love Light', cursive;
-      font-size: 3rem;
-      color: #00000063;
-      cursor: pointer;
-      z-index: 4;
-       }
+     .logo_image {
+      z-index: 6;
+      width: 25%;
+      height: 5.5vh;
+      position: absolute;
+      top: 2vh;
+      right: 59.5vh;
+      background: url("img/logo_up_image.png") no-repeat;
+      background-size: 40vh;
+  }
 
-      h1:hover {
-       transform: scale(1.1);
-       }
+  .logo_image:hover {
+    background: url("img/logo_down_image.png") no-repeat;
+    background-size: 40vh;
+    cursor: none;
+  }
 
-.menu_image {
-  width: 4.7vh;
-  position: absolute;
-  right: 59vh;
-  top: 2.2vh;
-  cursor: pointer;
-  transform: rotate(0deg);
-  cursor: pointer;
+  .logo_image:hover {
+    background: url("img/logo_gif.gif") no-repeat;
+    background-size: 40vh;
+    cursor: none;
+  }
+
+  header div {
+    width: 20vh;
+  }
+
+  .menu_image {
+    width: 4vh;
+    position: absolute;
+    right: 54.3vh;
+    top: 1vh;
+    z-index: 5;
 }
 
   .menu_image:hover {
@@ -115,6 +127,7 @@ body {
     backface-visibility: hidden;
     perspective: 1000px;
     cursor: none;
+    
      }
 
       @keyframes wave {
@@ -168,7 +181,7 @@ body {
 
 .headers_image {
   width: 69vh;
-  margin-top: -6.2vh;
+  margin-top: 4.2vh;
   z-index: 3;
 }
 
