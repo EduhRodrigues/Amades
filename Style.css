@@ -46,6 +46,22 @@ body {
   top: 7vh;
 }
 
+.usha_de_costas_image {
+  display: flex;
+  z-index: 6;
+  width: 17vh;
+  height: 11vh;
+  position: absolute;
+  right: 13vh;
+  bottom: 0;
+  background: url("img/usha_de_costas.png") no-repeat;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
 .foto_container {
   display: flex;
   z-index: 6;
