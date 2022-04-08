@@ -1,2 +1,2 @@
 <img src="Index_image.jpg">
-Click <a href="https://eduhrodrigues.github.io/">here</a> to see the web page of this project.
+Click <a href="https://eduhrodrigues.github.io/">here</a> to go to the web page of this project.
