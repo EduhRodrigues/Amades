@@ -1,2 +1,2 @@
 <img src="img/Index_image.jpg">
-Check it out on <a href="http://edurodrigues.website/">http://edurodrigues.website/</a> 
+Check it out on <a href="https://eduhrodrigues.github.io/">https://eduhrodrigues.github.io/</a> 
